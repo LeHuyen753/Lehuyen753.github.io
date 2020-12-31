@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Store</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/86393b0dc0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <img src= "https://pbs.twimg.com/media/Dn8WV8lXUAAOZA0.jpg" width='375px' height="130px">
+                <div class="form">
+                    <input type="text" placeholder="Search For Products"/>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div> 
+                <div class='btn-header'>
+                    <button type="button" class="account"><i class="fas fa-user-circle"></i>Sign In/Register</button>
+                    <button type="button" class="cart"><i class="fas fa-shopping-cart"></i>Shopping Cart</button>        
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="row-nav nav-bg">
+            <a href="#"><i class="fas fa-home"></i></a>
+            <a href="#">ABOUT</a>
+            <a href="#">BLOG</a>
+            <a href="#">FEATURED</a>
+            <a href="#">SHOP</a>
+            <a href="#">CONTACTS</a>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="slide show" id="slide-1-content">
+            <div class="content">
+                <h1>CRYSIS REMASTERED</h1>
+                <button type="button" class='btn-lg'>Buy Now</button>
+            </div>
+        </div>
+        <div class="slide"  id="slide-2-content">
+            <div class="content">
+                <h1>DARK SOULS 3</h1>
+                <button type="button" class='btn-lg'>Buy Now</button>
+            </div>
+        </div>
+        <div class="slide"  id="slide-3-content">
+            <div class="content">
+                <h1>BRAWLHALLA</h1>
+                <button type="button" class='btn-lg'>Buy Now</button>
+            </div>
+        </div>
+        <div class="slide"  id="slide-4-content">
+            <div class="content">
+                <h1>WIDOWMAKER</h1>
+                <button type="button" class='btn-lg'>Buy Now</button>
+            </div>
+        </div>
+        <div class="slide"  id="slide-5-content">
+            <div class="content">
+                <h1>DAWN PIONEER</h1>
+                <button type="button" class='btn-lg'>Buy Now</button>
+            </div>
+        </div>       
+    </div>
+    <div class="node">
+        <a href="#" id="slide-1" class="active">1</a>
+        <a href="#" id="slide-2">2</a>
+        <a href="#" id="slide-3">3</a>
+        <a href="#" id="slide-4">4</a>
+        <a href="#" id="slide-5">5</a>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+    const node=document.querySelectorAll('.node a');
+        const slides=document.querySelectorAll('.slide');
+        function choseNode(e){
+            removeNode();
+            removeShow();
+            this.classList.add('active');
+            const cur=document.querySelector(`#${this.id}-content`);
+            cur.classList.add('show');
+        }
+        const removeShow=()=>{
+            slides.forEach(e=>e.classList.remove('active'));
+        }
+        const removeNode=()=>{
+            node.forEach(e=>e.classList.remove('active'));
+        }
+
+    node.forEach(e=>e.addEventListener('click',choseNode));
+    </script>
+    <section class="bg-1">
+        <div class="container-1">
+            <div class="row-2">
+                <div class="box">
+                    <img src="https://cdn.tgdd.vn/Files/2020/10/20/1300458/genshin-impact-thumb_800x450.jpg" width="429px" height="340px">
+                    <h1>Genshin Impact</h1>
+                    <p>Genshin Impact is a combination of anime graphic arts and the aesthetics of many different cultures. Players will have a completely new experience traveling through the different lands of Teyvat.</p>
+                    <button type="button" class="btn-sl">View</button>
+                </div>
+                <div class="box">
+                    <img src="https://l2pbomb.com/wp-content/uploads/2020/03/tft-set-3-galaxies-unveiled-champions-and-traits.jpg" width="410px" height="340px">
+                    <h1>Teamfight Tactics</h1>
+                    <p>TFT is a round-based strategy game that pits you against seven opponents in a free-for-all race to build a powerful team that fights on your behalf. Your goal: Be the last person standing.</p>
+                    <button type="button" class="btn-sl">View</button>
+                </div>
+                <div class="box">
+                    <img src="https://bongda123.com/wp-content/uploads/2020/04/game-chien-thuat-cho-ios-1.png" width="410px" height="340px">
+                    <h1>Clash of Clans</h1>
+                    <p>Multiplayer mode allows players to easily build and protect communities, as well as enhance the military's combat capabilities to bring back the title and glory of their clan.</p>
+                    <button type="button" class="btn-sl">View</button>
+                </div>
+                <div class="box">
+                    <img src="https://image.thanhnien.vn/660/uploaded/khuongduy/2017_07_31/vo-lam-chi-mong-dong-cua-03_vgca.jpg" width="429px" height="340px">
+                    <h1>Vo Lam Chi Mong II</h1>
+                    <p>The context of martial arts under the Song Kim dynasty and the sects divided into three forces (Chinh Phai - Trung Lap - Ta Phai) sought to transform to proclaim the martial system of Vo Lam.</p>
+                    <button type="button" class="btn-sl">View</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-1">
+            <div class="bg-3">
+                <div class="her">
+                    <h1>ON SALES</h1>
+                </div>
+                <div class="row-3">
+                    <div class="box-1">
+                        <div class="row-3">
+                            <img src="https://steamcdn-a.akamaihd.net/steam/apps/450950/capsule_616x353.jpg?t=1569363262" width="260px" height="150px"/>
+                            <div class="content-1">
+                                <p>Danmaku Unlimited 3</p>
+                                <h3>612.434đ</h3>
+                                <h4>̶̶7̶̶8̶̶9̶̶.̶̶9̶̶8̶̶9̶̶đ̶</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="box-1">
+                        <div class="row-3">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1496120/capsule_616x353.jpg?t=1607953996" width="260px" height="150px"/>
+                            <div class="content-1">
+                                <p>Phantast</p>
+                                <h3>345.079đ</h3>
+                                <h4>̶43̶̶0̶̶.̶̶2̶̶7̶̶5̶̶đ̶</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="row-3">
+                            <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_460,w_695/v1462722920/bwir25oygsouhtzjmfpk.jpg" width="260px" height="150px"/>
+                            <div class="content-1">
+                                <p>Diesel Guns</p>
+                                <h3>132.400đ</h3>
+                                <h4>̶̶2̶̶2̶̶1̶̶.̶̶5̶̶5̶̶5̶</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    <div class="container-1">
+        <div class="row-4">
+            <div class="content-2">
+                <h1>NEW RELEASE</h1>
+                <div class="content-2-1">
+                    <a href="#">Cuu Thien 3</a><br>
+                    <a href="#">Fall Flat</a><br>
+                    <a href="#">Bio Inc.: Redemption</a><br>
+                    <a href="#">Slash of Sword: R.J</a><br>
+                    <a href="#">Clash of Legions</a><br>
+                    <a href="#">Twilight Hero</a><br>
+                    <a href="#">Hidden Realm</a><br>
+                </div>
+            </div>
+
+            <div class="content-3">
+                <h1>FEATURED PRODUCTS</h1>
+                <div class="row-5">
+                    <div class="box-3">
+                        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1222680/header.jpg?t=1605898924" width="410px" height="340px">
+                        <h1>Need For Speed Heat</h1>
+                        <h3>544.001đ</h3>
+                        <button type="button" class="btn-sl">Add To Cart</button>
+                    </div>
+                    <div class="box-3">
+                        <img src="https://kpshop.vn/wp-content/uploads/2020/06/mua-game-diablo-3.jpg" width="410px" height="340px">
+                        <h1>Diablo III</h1>
+                        <h3>998.095đ</h3>
+                        <button type="button" class="btn-sl">Add To Cart</button>
+                    </div>
+                    <div class="box-3">
+                        <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/3/31/xc6e14jeolutgs3mlajn/ori-and-the-will-of-the-wisps-screenshot" width="410px" height="340px">
+                        <h1>Ori and the Will of the Wisps</h1>
+                        <h3>872.657đ</h3>
+                        <button type="button" class="btn-sl">Add To Cart</button>
+                    </div>
+                    
+                </div>               
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <div class="row-6">
+            <div class="for-1">
+                <h1>GAME SHOP</h1>
+                <span>About Us</span><br>
+                <span>Privacy Policy</span><br>
+                <span>Terms & Conditions</span><br>
+                <span>BLOG</span>
+            </div>
+            <div class="for-1">
+                <h1>MY ACCOUNT</h1>
+                <span>My Account</span><br>
+                <span>My Orders</span><br>
+                <span>Affiliate Account</span>
+            </div>
+            <div class="for-1">
+                <h1>CUSTOMER SERVICE</h1>
+                <span>Support Requests</span><br>
+                <span>Help Desk</span><br>
+                <span>FAQ</span><br>
+                <span>Knowledge Base</span>
+            </div>
+            <div class="for-1">
+                <h1>CONTACT US</h1>
+                <span>Customer Service Support<br>+012345678</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
